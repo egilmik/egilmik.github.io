@@ -1,1 +1,26 @@
-"Hello world" 
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easter Hunt</title>
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById("answer").value.toLowerCase();
+      if (input === "husafjellet") {
+        window.location.href = "success.html";
+      } else {
+        alert("Wrong answer! Try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to the Easter Egg Hunt!</h1>
+  <img src="bunny.jpg" alt="Easter Bunny" width="300" />
+  <p>Enter the password to continue:</p>
+  <input type="text" id="answer" placeholder="Enter code here" />
+  <button onclick="checkAnswer()">Submit</button>
+</body>
+</html>
