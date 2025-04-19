@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easter Hunt</title>
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById("answer").value.toLowerCase();
+      if (input === "esco") {
+        window.location.href = "nr4.html";
+      } else {
+        alert("Wrong answer! Try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Neste ledetråd finner dere ved å finne det blå merket på kartet</h1>
+  <p>Hva står på den røde brannhydranten på parkeringsplassen til Barnashage?</p>
+  <img src="esco.png" alt="Easter Bunny" width="300" />
+  <p>Skriv det som står på brannhydranten  i boksen under</p>
+  <input type="text" id="answer" placeholder="Skriv koden her" />
+  <button onclick="checkAnswer()">Neste</button>
+</body>
+</html>
